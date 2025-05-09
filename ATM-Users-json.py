@@ -11,7 +11,6 @@ def load_users():
         }
         with open(path, "w") as f:
             json.dump(sample_data, f, indent=4)
-        print("✅ Created sample users.json file.")
 
     with open(path, "r") as f:
         data = json.load(f)
